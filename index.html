@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaizen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo1isTo1.jpg" type="image/jpg">
+
+    <style>
+        /* Global Styles */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background-color: #111;
+        }
+        .logo img {
+            height: 50px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 50px 20px;
+        }
+        .hero p {
+            margin-bottom: 20px; /* Add a margin below the paragraph */
+        }
+        .video-wrapper {
+            margin-top: 50px; /* Add a margin above the video wrapper */
+        }
+        .video-wrapper video {
+            width: 80%;
+            height: 400px;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        .feature {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+        }
+        .feature i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 40px;
+            background-color: #111;
+        }
+
+        /* Philosophy Section */
+        .philosophy {
+            color: black;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .philosophy .feature {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+        }
+        .philosophy h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .philosophy p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Demo Video Section */
+        .demo-video {
+            padding: 40px;
+            background-color: #111;
+        }
+        .demo-video h2 {
+            margin-bottom: 20px;
+        }
+        .demo-video .video-wrapper {
+            margin-top: 20px;
+        }
+
+        /* Screenshot Section */
+        .screenshot {
+            padding: 40px;
+            background-color: black;
+        }
+        .screenshot h2 {
+            margin-bottom: 20px;
+        }
+        .screenshot img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 8px;
+        }
+
+        /* Footer Section */
+        footer {
+            padding: 20px;
+            background-color: #222;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .feature {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .demo-video .video-wrapper video,
+            .screenshot img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo-image.jpg" alt="Kaizen Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to <strong style="color: red;">Kaizen</strong></h1>
+        <p>A step towards redefining user experience in Sony D2C platforms</p>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="assets/videos/KaizenIntro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>What is Kaizen?</h2>
+        <p>Kaizen is a hyper-personalization engine, built to make e-commerce shopping more intuitive and engaging.</p>
+        <p>Designed as customizable microservices, Kaizen can be seamlessly integrated into any Sony D2C platform with simple API calls.</p>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-user"></i>
+            <h3>User Behavior based Recommendations</h3>
+            <p>Recommends products based on what users are actually interested in.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Dynamic Bundling</h3>
+            <p>We bundle relevant products on the fly and suggest them to users.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-search"></i>
+            <h3>Smart Search</h3>
+            <p>Describe what you are looking for and it will suggest relevant products.</p>
+        </div>
+    </section>
+
+    <section class="philosophy">
+        <div class="feature">
+            <h3>Built on the philosophy of <strong>Simple, Smart, and Seamless</strong></h3>
+            <p>
+                <strong>Simple</strong> – Easy to integrate into existing Sony platforms.<br>
+                <strong>Smart</strong> – Understands user behavior and adapts accordingly.<br>
+                <strong>Seamless</strong> – Provides a frictionless shopping experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Screenshot Section -->
+    <section class="screenshot">
+        <h2>Smart Search in Action</h2>
+        <p>Prompt - I want a portable speaker because I have backpain but it should be louder than my neighbors sharma ji's speaker</p>
+        <img src="assets/images/smartSearchScreenshot.jpeg" alt="Smart Search Screenshot">
+    </section>
+
+    <!-- Demo Video Section -->
+    <section class="demo-video">
+        <h2>Demo Video</h2>
+        <div class="video-wrapper">
+            <video controls>
+                <source src="assets/videos/FcpDemoVideoCompressedTo20MB.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        <p>Kaizen redefines shopping in a <strong>Simple, Smart, and Seamless</strong> way</p>
+    </footer>
+</body>
+</html>
